@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import couple from '../assets/couple.jpg'
 
 function Timer() {
   const [days, setDays] = useState(null);
@@ -50,6 +51,7 @@ function Timer() {
             </div>
           </div>
         </div>
+        <img src={couple} alt="couple" />
       </section>
     </>
   );
