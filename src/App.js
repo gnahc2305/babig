@@ -12,6 +12,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/:id' element={<Home />} />
         <Route path='/fotos' element={<Fotos />} />
       </Routes>
     </BrowserRouter>
