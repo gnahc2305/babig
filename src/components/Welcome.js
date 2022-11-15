@@ -1,22 +1,14 @@
 import React, { useEffect, useState } from "react";
 import heart from "../assets/heart.png";
 import hearts from "../assets/hearts.png";
-import confetti from "https://cdn.skypack.dev/canvas-confetti";
 import { motion } from "framer-motion";
-import JSConfetti from "js-confetti";
+import { JSConfetti } from "js-confetti";
 
 function Welcome() {
   const [showModal, setShowModal] = useState(false);
-  // startConfetti();
-  // setTimeout(confetti, 1000);
-  // setTimeout(confetti, 1000);
-  // setTimeout(confetti, 1000);
-  // function confeti() {
-  //   confetti();
-  // }
+
   const jsConfetti = new JSConfetti();
 
-  
   function openModal() {
     setShowModal(true);
     jsConfetti.addConfetti();
@@ -42,7 +34,6 @@ function Welcome() {
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        // onMouseEnter={jsConfetti.addConfetti}
         id="myBtn"
         onClick={openModal}
       >
