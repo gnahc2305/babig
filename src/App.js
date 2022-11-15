@@ -1,8 +1,6 @@
 import React from 'react'
 import './style.css'
 import { Routes, Route, HashRouter } from 'react-router-dom'
-// import { BrowserRouter } from 'react-router-dom'
-
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Fotos from './components/Fotos'
