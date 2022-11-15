@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/babig/static/css/main.cf551d8d.css",
-    "main.js": "/babig/static/js/main.d9a1fc4d.js",
+    "main.js": "/babig/static/js/main.ee09f744.js",
     "static/media/hearts.png": "/babig/static/media/hearts.d549f19fc653a5cc5c32.png",
     "static/media/heart.png": "/babig/static/media/heart.93e6f1e60f6f8d104b48.png",
     "static/media/couple.jpg": "/babig/static/media/couple.67b7e5731f4ba68c08ce.jpg",
     "index.html": "/babig/index.html",
     "main.cf551d8d.css.map": "/babig/static/css/main.cf551d8d.css.map",
-    "main.d9a1fc4d.js.map": "/babig/static/js/main.d9a1fc4d.js.map"
+    "main.ee09f744.js.map": "/babig/static/js/main.ee09f744.js.map"
   },
   "entrypoints": [
     "static/css/main.cf551d8d.css",
-    "static/js/main.d9a1fc4d.js"
+    "static/js/main.ee09f744.js"
   ]
 }
