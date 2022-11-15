@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/gnahc2305/babig/static/css/main.cf551d8d.css",
-    "main.js": "/gnahc2305/babig/static/js/main.9b08e250.js",
-    "static/media/hearts.png": "/gnahc2305/babig/static/media/hearts.d549f19fc653a5cc5c32.png",
-    "static/media/heart.png": "/gnahc2305/babig/static/media/heart.93e6f1e60f6f8d104b48.png",
-    "static/media/couple.jpg": "/gnahc2305/babig/static/media/couple.67b7e5731f4ba68c08ce.jpg",
-    "index.html": "/gnahc2305/babig/index.html",
-    "main.cf551d8d.css.map": "/gnahc2305/babig/static/css/main.cf551d8d.css.map",
-    "main.9b08e250.js.map": "/gnahc2305/babig/static/js/main.9b08e250.js.map"
+    "main.css": "/babig/static/css/main.cf551d8d.css",
+    "main.js": "/babig/static/js/main.85f248e7.js",
+    "static/media/hearts.png": "/babig/static/media/hearts.d549f19fc653a5cc5c32.png",
+    "static/media/heart.png": "/babig/static/media/heart.93e6f1e60f6f8d104b48.png",
+    "static/media/couple.jpg": "/babig/static/media/couple.67b7e5731f4ba68c08ce.jpg",
+    "index.html": "/babig/index.html",
+    "main.cf551d8d.css.map": "/babig/static/css/main.cf551d8d.css.map",
+    "main.85f248e7.js.map": "/babig/static/js/main.85f248e7.js.map"
   },
   "entrypoints": [
     "static/css/main.cf551d8d.css",
-    "static/js/main.9b08e250.js"
+    "static/js/main.85f248e7.js"
   ]
 }
