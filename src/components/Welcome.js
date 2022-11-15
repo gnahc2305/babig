@@ -7,6 +7,7 @@ import JSConfetti from "js-confetti";
 function Welcome() {
   const [showModal, setShowModal] = useState(false);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const jsConfetti = new JSConfetti();
 
   function openModal() {
@@ -26,7 +27,7 @@ function Welcome() {
 
   useEffect(() => {
     jsConfetti.addConfetti();
-  }, []);
+  }, [jsConfetti]);
 
   return (
     <div className="container">
