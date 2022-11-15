@@ -9,9 +9,7 @@ import Fotos from './components/Fotos'
 function App() {
   return (
     <BrowserRouter>
-
       <Nav />
-
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/fotos' element={<Fotos />} />
