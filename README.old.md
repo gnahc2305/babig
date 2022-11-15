@@ -1,2 +1,0 @@
-# babig
-Pagina Babi G
