@@ -3,19 +3,23 @@ import heart from "../assets/heart.png";
 import hearts from "../assets/hearts.png";
 import confetti from "https://cdn.skypack.dev/canvas-confetti";
 import { motion } from "framer-motion";
+import JSConfetti from "js-confetti";
 
 function Welcome() {
   const [showModal, setShowModal] = useState(false);
+  // startConfetti();
+  // setTimeout(confetti, 1000);
+  // setTimeout(confetti, 1000);
+  // setTimeout(confetti, 1000);
+  // function confeti() {
+  //   confetti();
+  // }
+  const jsConfetti = new JSConfetti();
 
-  setTimeout(confetti, 1000);
-  setTimeout(confetti, 1000);
-  setTimeout(confetti, 1000);
-  function confeti() {
-    confetti();
-  }
-
+  
   function openModal() {
     setShowModal(true);
+    jsConfetti.addConfetti();
   }
 
   function closeModal() {
@@ -23,8 +27,8 @@ function Welcome() {
   }
 
   window.addEventListener("keydown", (e) => {
-    if (e.key === 'Escape') {
-        closeModal();
+    if (e.key === "Escape") {
+      closeModal();
     }
   });
 
@@ -34,7 +38,7 @@ function Welcome() {
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        onMouseEnter={confeti}
+        // onMouseEnter={jsConfetti.addConfetti}
         id="myBtn"
         onClick={openModal}
       >
@@ -71,7 +75,6 @@ function Welcome() {
           <img src={hearts} alt="hearts" />
         </div>
       </div>
-
 
       <div className="custom-shape-divider-top-1668461604">
         <svg
