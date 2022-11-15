@@ -24,6 +24,8 @@ body {
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    /* color: black; */
+    text-decoration: none;
     cursor: pointer;
     /* font-size: 25px; */
 }
@@ -50,9 +52,9 @@ body {
     font-size: 25px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: rgb(108, 108, 236);
+    /* background-color: rgb(108, 108, 236); */
+    background-color: #A1C2D1;
     font-weight: 100;
-    color: white;
     border: none;
 }
 
@@ -160,16 +162,38 @@ h2 {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border: 5px solid #FE88A0;
+    width: 60%;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 10px;
+    background-color: #A1C2D1;
+    /* background-color: #ebc0c7; */
+  }
+
+
+  .modal-content img {
+    height: 250px;
+    width: 300px;
+    display: block;
+    margin: auto;
+ }
+
+  .modal-header {
+    text-align: center;
+    font-size: 22px;
   }
   
   /* The Close Button */
   .close {
-    color: #aaa;
+    color: rgb(0, 0, 0);
     float: right;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
+  }
+
+  .modal-content p {
+    font-size: 20px;
   }
   
   .close:hover,
@@ -177,4 +201,9 @@ h2 {
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
   }

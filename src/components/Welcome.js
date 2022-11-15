@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import heart from "../assets/heart.png";
+import hearts from "../assets/hearts.png";
 import confetti from "https://cdn.skypack.dev/canvas-confetti";
 import { motion } from "framer-motion";
 
@@ -21,6 +22,12 @@ function Welcome() {
     setShowModal(false);
   }
 
+  window.addEventListener("keydown", (e) => {
+    if (e.key === 'Escape') {
+        closeModal();
+    }
+  });
+
   return (
     <div className="container">
       <h1>Feliz Cumpleaños!!!!</h1>
@@ -40,10 +47,28 @@ function Welcome() {
         style={{ display: showModal ? "block" : "none" }}
       >
         <div className="modal-content">
-          <span className="close" onClick={closeModal}>
-            &times;
-          </span>
-          <p>Some text in the Modal..</p>
+          <div className="modal-header">
+            <span className="close" onClick={closeModal}>
+              &times;
+            </span>
+            <h3>Feliz dia baby!</h3>
+          </div>
+
+          <p>
+            Te amo mas que nada en el mundo y espero que la pases muy bien
+            hoy!!!!
+          </p>
+          <br />
+          <p>
+            Porfin hice la pagina babig y espero que te guste, la hice con mucho
+            cariño y amor ♥ Te agradezco por siempre apoyarme y estar conmigo en
+            las buenas y en las malas. Eres mi mundo entero y daria todo por ti,
+            el tiempo se va a pasar volando y pronto volveremos a estar juntos
+          </p>
+          <br />
+          <p>Mereces toda la felicidad del universo, te amo mi baby hermosa</p>
+
+          <img src={hearts} alt="hearts" />
         </div>
       </div>
 
