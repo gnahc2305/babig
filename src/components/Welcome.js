@@ -1,11 +1,21 @@
 import React from "react";
 import heart from "../assets/heart.png";
+import confetti from "https://cdn.skypack.dev/canvas-confetti";
 
 function Welcome() {
+    setTimeout(confetti, 1000)
+    setTimeout(confetti, 1000)
+    setTimeout(confetti, 1000)
+    function confeti() {
+        confetti();
+    }
+
   return (
     <div className="container">
       <h1>Feliz Cumpleaños!!!!</h1>
-      <button type="button">Clickeame</button>
+      <button type="button" onMouseEnter={confeti}>
+        Clickeame
+      </button>
 
       <div className="custom-shape-divider-top-1668461604">
         <svg
@@ -22,7 +32,7 @@ function Welcome() {
       </div>
 
       <img src={heart} alt="hearts" id="heart1" />
-      <img src={heart} alt="hearts" id="heart2"/>
+      <img src={heart} alt="hearts" id="heart2" />
     </div>
   );
 }
