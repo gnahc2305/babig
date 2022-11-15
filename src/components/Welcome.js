@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import heart from "../assets/heart.png";
 import hearts from "../assets/hearts.png";
 import { motion } from "framer-motion";
-import { JSConfetti } from "js-confetti";
+import JSConfetti from "js-confetti";
 
 function Welcome() {
   const [showModal, setShowModal] = useState(false);
