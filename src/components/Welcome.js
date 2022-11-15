@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import heart from "../assets/heart.png";
 import hearts from "../assets/hearts.png";
 import confetti from "https://cdn.skypack.dev/canvas-confetti";
@@ -31,6 +31,10 @@ function Welcome() {
       closeModal();
     }
   });
+
+  useEffect(() => {
+    jsConfetti.addConfetti();
+  }, []);
 
   return (
     <div className="container">
