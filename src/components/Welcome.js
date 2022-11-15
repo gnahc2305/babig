@@ -1,21 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import heart from "../assets/heart.png";
 import confetti from "https://cdn.skypack.dev/canvas-confetti";
+import { motion } from "framer-motion";
 
 function Welcome() {
-    setTimeout(confetti, 1000)
-    setTimeout(confetti, 1000)
-    setTimeout(confetti, 1000)
-    function confeti() {
-        confetti();
-    }
+  const [showModal, setShowModal] = useState(false);
+
+  setTimeout(confetti, 1000);
+  setTimeout(confetti, 1000);
+  setTimeout(confetti, 1000);
+  function confeti() {
+    confetti();
+  }
+
+  function openModal() {
+    setShowModal(true);
+  }
+
+  function closeModal() {
+    setShowModal(false);
+  }
 
   return (
     <div className="container">
       <h1>Feliz Cumpleaños!!!!</h1>
-      <button type="button" onMouseEnter={confeti}>
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        onMouseEnter={confeti}
+        id="myBtn"
+        onClick={openModal}
+      >
         Clickeame
-      </button>
+      </motion.button>
+
+      <div
+        id="myModal"
+        className="modal"
+        style={{ display: showModal ? "block" : "none" }}
+      >
+        <div className="modal-content">
+          <span className="close" onClick={closeModal}>
+            &times;
+          </span>
+          <p>Some text in the Modal..</p>
+        </div>
+      </div>
+
+      {/* <Modal modalInfo={showModal} /> */}
 
       <div className="custom-shape-divider-top-1668461604">
         <svg
@@ -30,7 +62,6 @@ function Welcome() {
           ></path>
         </svg>
       </div>
-
       <img src={heart} alt="hearts" id="heart1" />
       <img src={heart} alt="hearts" id="heart2" />
     </div>
