@@ -224,7 +224,7 @@ h2 {
 }
 
 .picture:hover {
-    transform: scale(1.1);
+    transform: scale(1.8);
 }
 
 .picture:hover > img {

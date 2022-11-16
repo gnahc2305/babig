@@ -31,7 +31,7 @@ function Welcome() {
 
   return (
     <div className="container">
-      <h1>Feliz Cumpleaños!!!! wuhu</h1>
+      <h1>Feliz Cumpleaños!!!!</h1>
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
