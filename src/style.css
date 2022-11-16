@@ -208,10 +208,25 @@ h2 {
     to {top: 0; opacity: 1}
   }
 
-.fotos-container {
+.gallery {
     height: 100vh;
     width: 100%;
-    background-color: lightblue;
+}
+
+.picture > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    opacity: 0;
+}
+
+.picture:hover {
+    transform: scale(1.1);
+}
+
+.picture:hover > img {
+    opacity: 1;
 }
 
 .picture {
@@ -226,6 +241,7 @@ h2 {
     height: 10%;
     width: 20%;
     top: 15%;
+    /* background-image: url(./assets/Pictures/p\ \(5\).jpeg); */
 }
 
 .picture:nth-child(2) {
