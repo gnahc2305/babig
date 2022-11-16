@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/babig/static/css/main.70b12974.css",
+    "main.css": "/babig/static/css/main.269aec9d.css",
     "main.js": "/babig/static/js/main.f5562795.js",
     "static/media/hearts.png": "/babig/static/media/hearts.d549f19fc653a5cc5c32.png",
     "static/media/p1.jpeg": "/babig/static/media/p1.c45887832450357fd9f3.jpeg",
@@ -21,11 +21,11 @@
     "static/media/p5.jpeg": "/babig/static/media/p5.2e8d7957297f08686512.jpeg",
     "static/media/couple.jpg": "/babig/static/media/couple.67b7e5731f4ba68c08ce.jpg",
     "index.html": "/babig/index.html",
-    "main.70b12974.css.map": "/babig/static/css/main.70b12974.css.map",
+    "main.269aec9d.css.map": "/babig/static/css/main.269aec9d.css.map",
     "main.f5562795.js.map": "/babig/static/js/main.f5562795.js.map"
   },
   "entrypoints": [
-    "static/css/main.70b12974.css",
+    "static/css/main.269aec9d.css",
     "static/js/main.f5562795.js"
   ]
 }
