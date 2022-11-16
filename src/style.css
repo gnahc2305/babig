@@ -219,6 +219,8 @@ h2 {
     object-fit: cover;
     border-radius: inherit;
     opacity: 0;
+    transition: opacity 800ms ease, 
+        transform 800ms ease;
 }
 
 .picture:hover {
@@ -231,17 +233,17 @@ h2 {
 
 .picture {
     border-radius: 10px;
-    background-color: coral;
     position: absolute;
     text-align: center;
     font-size: 50px;
+    transition: transform 800ms ease;
 }
 
 .picture:nth-child(1) {
     height: 10%;
     width: 20%;
     top: 15%;
-    /* background-image: url(./assets/Pictures/p\ \(5\).jpeg); */
+    background-color: #FFFFA0;
 }
 
 .picture:nth-child(2) {
@@ -249,6 +251,7 @@ h2 {
     width: 40%;
     right: 10%;
     top: 20%;
+    background-color: #FFB6AC;
 }
 
 .picture:nth-child(3) {
@@ -256,6 +259,7 @@ h2 {
     width: 30%;
     right: 5%;
     top: 50%;
+    background-color: #7FC9CC;
 }
 
 .picture:nth-child(4) {
@@ -263,6 +267,7 @@ h2 {
     width: 15%;
     right: 50%;
     top: 50%;
+    background-color: #32CACE;
 }
 
 .picture:nth-child(5) {
@@ -270,6 +275,7 @@ h2 {
     width: 25%;
     right: 70%;
     top: 80%;
+    background-color: #EDCFE0;
 }
 
 .picture:nth-child(6) {
@@ -277,6 +283,7 @@ h2 {
     width: 8%;
     right: 60%;
     top: 20%;
+    background-color: #CDA0CA;
 }
 
 .picture:nth-child(7) {
@@ -284,6 +291,7 @@ h2 {
     width: 13%;
     right: 10%;
     top: 80%;
+    background-color: #FF7E87;
 }
 
 .picture:nth-child(8) {
@@ -291,6 +299,7 @@ h2 {
     width: 20%;
     left: 5%;
     top: 30%;
+    background-color: #FECFAF;
 }
 
 .picture:nth-child(9) {
@@ -298,6 +307,7 @@ h2 {
     width: 12%;
     left: 1%;
     top: 60%;
+    background-color: #C1DCDC;
 }
 
 .picture:nth-child(10) {
@@ -305,6 +315,7 @@ h2 {
     width: 8%;
     right: 1%;
     top: 12%;
+    background-color: #94A4C4;
 }
 
 .picture:nth-child(11) {
@@ -312,6 +323,7 @@ h2 {
     width: 8%;
     right: 50%;
     top: 90%;
+    background-color: #0098AD;
 }
 
 .picture:nth-child(12) {
@@ -319,6 +331,7 @@ h2 {
     width: 18%;
     right: 25%;
     top: 90%;
+    background-color: #455F4D;
 }
 
 .picture:nth-child(13) {
@@ -326,6 +339,7 @@ h2 {
     width: 15%;
     right: 30%;
     top: 70%;
+    background-color: #B3C5BA;
 }
 
 .picture:nth-child(14) {
@@ -333,6 +347,7 @@ h2 {
     width: 5%;
     right: 50%;
     top: 11%;
+    background-color: #508C84;
 }
 
 .picture:nth-child(15) {
@@ -340,6 +355,7 @@ h2 {
     width: 10%;
     left: 20%;
     top: 66%;
+    background-color: #E4B264;
 }
 
 
